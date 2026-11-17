@@ -1,0 +1,230 @@
+{
+  "loads": [
+    {
+      "snapshot_date": "2023-01-01",
+      "source_rows": 37563,
+      "inserted": 37563,
+      "updated": 0,
+      "deleted": 0,
+      "unchanged": 0,
+      "skipped": false,
+      "seconds": 0.317
+    },
+    {
+      "snapshot_date": "2024-01-01",
+      "source_rows": 37544,
+      "inserted": 21,
+      "updated": 282,
+      "deleted": 40,
+      "unchanged": 37241,
+      "skipped": false,
+      "seconds": 0.309
+    },
+    {
+      "snapshot_date": "2025-01-01",
+      "source_rows": 37548,
+      "inserted": 101,
+      "updated": 79,
+      "deleted": 97,
+      "unchanged": 37368,
+      "skipped": false,
+      "seconds": 0.299
+    }
+  ],
+  "dimension_rows": 38046,
+  "checks": {
+    "one_current_version_per_key": 0,
+    "no_overlapping_validity_intervals": 0,
+    "valid_to_after_valid_from": 0,
+    "closed_rows_are_not_current": 0,
+    "current_rows_match_last_snapshot": 0,
+    "libelle_not_null": 0,
+    "com_departement_code_format": 0,
+    "child_points_to_current_parent": 0
+  },
+  "recette": [
+    {
+      "snapshot_date": "2024-01-01",
+      "official_events": 75,
+      "expected_keys": 71,
+      "detected_identity_keys": 81,
+      "matched": 71,
+      "late_event": 8,
+      "parent_recoded": 2,
+      "unexplained": 0,
+      "attachment_only_updates": 262,
+      "missed_examples": [],
+      "unexplained_examples": [],
+      "events_by_type": {
+        "10 changement de nom": 9,
+        "21 rétablissement": 8,
+        "32 création de commune nouvelle": 42,
+        "34 fusion association -> fusion simple": 8,
+        "35 suppression de commune déléguée": 8
+      },
+      "recall": 1.0,
+      "precision": 0.8765432098765432,
+      "explained_share": 1.0
+    },
+    {
+      "snapshot_date": "2025-01-01",
+      "official_events": 241,
+      "expected_keys": 233,
+      "detected_identity_keys": 266,
+      "matched": 233,
+      "late_event": 10,
+      "parent_recoded": 23,
+      "unexplained": 0,
+      "attachment_only_updates": 11,
+      "missed_examples": [],
+      "unexplained_examples": [],
+      "events_by_type": {
+        "10 changement de nom": 8,
+        "21 rétablissement": 10,
+        "32 création de commune nouvelle": 209,
+        "34 fusion association -> fusion simple": 2,
+        "35 suppression de commune déléguée": 8,
+        "50 changement de code (chef-lieu)": 4
+      },
+      "recall": 1.0,
+      "precision": 0.8759398496240601,
+      "explained_share": 1.0
+    }
+  ],
+  "change_summary": [
+    [
+      "2024-01-01",
+      "update",
+      "arr",
+      174
+    ],
+    [
+      "2024-01-01",
+      "update",
+      "can",
+      89
+    ],
+    [
+      "2024-01-01",
+      "delete",
+      "",
+      40
+    ],
+    [
+      "2024-01-01",
+      "insert",
+      "",
+      21
+    ],
+    [
+      "2024-01-01",
+      "update",
+      "nccenr",
+      18
+    ],
+    [
+      "2024-01-01",
+      "update",
+      "libelle",
+      18
+    ],
+    [
+      "2024-01-01",
+      "update",
+      "ncc",
+      16
+    ],
+    [
+      "2024-01-01",
+      "update",
+      "comparent",
+      2
+    ],
+    [
+      "2024-01-01",
+      "update",
+      "tncc",
+      1
+    ],
+    [
+      "2025-01-01",
+      "insert",
+      "",
+      101
+    ],
+    [
+      "2025-01-01",
+      "delete",
+      "",
+      97
+    ],
+    [
+      "2025-01-01",
+      "update",
+      "nccenr",
+      45
+    ],
+    [
+      "2025-01-01",
+      "update",
+      "libelle",
+      45
+    ],
+    [
+      "2025-01-01",
+      "update",
+      "ncc",
+      45
+    ],
+    [
+      "2025-01-01",
+      "update",
+      "comparent",
+      23
+    ],
+    [
+      "2025-01-01",
+      "update",
+      "arr",
+      11
+    ],
+    [
+      "2025-01-01",
+      "update",
+      "tncc",
+      7
+    ]
+  ],
+  "top_consolidation": [
+    [
+      "25",
+      571,
+      563,
+      8
+    ],
+    [
+      "16",
+      363,
+      359,
+      4
+    ],
+    [
+      "22",
+      348,
+      344,
+      4
+    ],
+    [
+      "61",
+      385,
+      381,
+      4
+    ],
+    [
+      "79",
+      256,
+      252,
+      4
+    ]
+  ]
+}

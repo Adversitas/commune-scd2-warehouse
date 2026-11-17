@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cogwh"
+version = "0.1.0"
+description = "Incremental SCD2 warehouse of French communes (INSEE COG 2023-2025) on DuckDB with data contracts, BI marts and an automated recette against INSEE's official event log."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["duckdb>=1.1", "pandas>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+cogwh = "cogwh.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cogwh"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
